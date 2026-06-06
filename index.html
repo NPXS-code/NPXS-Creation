@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NPXS Collection | Linktree</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             -webkit-tap-highlight-color: transparent;
         }
+
         a:focus {
             outline: none;
         }
+
         @keyframes gradientMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
+
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         body {
             background: linear-gradient(-45deg, #0F2027, #203A43, #2C5364, #203A43);
             background-size: 400% 400%;
             animation: gradientMove 15s ease infinite;
             min-height: 100vh;
             color: white;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Prompt', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
+
         .animate-fade-in {
             animation: fadeInUp 0.8s ease-out forwards;
         }
+
         .link-card {
             position: relative;
             overflow: hidden;
@@ -41,6 +66,7 @@
             background-color: rgba(255, 255, 255, 0.05);
             will-change: transform;
         }
+
         .link-card::after {
             content: "";
             position: absolute;
@@ -52,9 +78,11 @@
             transform: skewX(-25deg);
             transition: 0.7s;
         }
+
         .link-card:hover::after {
             left: 150%;
         }
+
         .link-card:hover {
             transform: scale(1.05);
             background-color: white;
@@ -63,6 +91,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="max-w-xl mx-auto pt-16 px-6 pb-20 flex flex-col items-center animate-fade-in">
         <!-- Profile Section -->
@@ -73,32 +102,43 @@
 
         <!-- Links Section -->
         <div class="w-full space-y-4">
-            <a href="https://www.facebook.com/NPXS0123zz/" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+            <a href="https://www.facebook.com/NPXS0123zz/" target="_blank"
+                class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
                 <i class="fab fa-facebook text-xl mr-3"></i> Facebook
             </a>
-            <a href="https://www.instagram.com/ntp_rmx/" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+            <a href="https://www.instagram.com/ntp_rmx/" target="_blank"
+                class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
                 <i class="fab fa-instagram text-xl mr-3"></i> Instagram
             </a>
-            
-            <a href="https://www.youtube.com/@NATTAPHONREMIX" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+
+            <a href="https://www.youtube.com/@NATTAPHONREMIX" target="_blank"
+                class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
                 <i class="fab fa-youtube text-xl mr-3"></i> YouTube Channel
             </a>
 
-            <a href="https://ntpremix.x2finity.xyz/" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+            <a href="https://ntpremix.x2finity.xyz/" target="_blank"
+                class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
                 <i class="fas fa-camera text-xl mr-3"></i> PHOTO
             </a>
         </div>
 
         <!-- Social Icons Footer -->
         <div class="flex space-x-8 mt-12 text-2xl" style="animation: fadeInUp 1s ease-out 0.3s backwards;">
-            <a href="https://www.facebook.com/NPXS0123zz/" target="_blank" class="inline-block hover:text-blue-500 hover:scale-125 transition-all duration-300"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/ntp_rmx/" target="_blank" class="inline-block hover:text-pink-500 hover:scale-125 transition-all duration-300"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@NATTAPHONREMIX" target="_blank" class="inline-block hover:text-red-500 hover:scale-125 transition-all duration-300"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/NPXS0123zz/" target="_blank"
+                class="inline-block hover:text-blue-500 hover:scale-125 transition-all duration-300"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ntp_rmx/" target="_blank"
+                class="inline-block hover:text-pink-500 hover:scale-125 transition-all duration-300"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@NATTAPHONREMIX" target="_blank"
+                class="inline-block hover:text-red-500 hover:scale-125 transition-all duration-300"><i
+                    class="fab fa-youtube"></i></a>
         </div>
-        
+
         <footer class="mt-16 text-gray-500 text-xs">
-            &copy; 2024 NPXS Collection. All Rights Reserved.
+            &copy; 2026 NPXS Collection.
         </footer>
     </div>
 </body>
+
 </html>
