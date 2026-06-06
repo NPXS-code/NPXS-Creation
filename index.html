@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPXS Collection | Linktree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            background: linear-gradient(135deg, #0F2027, #203A43, #2C5364) fixed;
+            min-height: 100vh;
+            color: white;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .link-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        .link-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transform: skewX(-25deg);
+            transition: 0.7s;
+        }
+        .link-card:hover::after {
+            left: 150%;
+        }
+        .link-card:hover {
+            transform: scale(1.05);
+            background-color: white;
+            color: black;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-md mx-auto pt-16 px-6 pb-20 flex flex-col items-center animate-fade-in">
+        <!-- Profile Section -->
+        <h1 class="text-2xl font-bold mb-2">NPXS Collection</h1>
+        <p class="text-gray-400 text-sm mb-8 text-center font-light max-w-xs leading-relaxed">
+            GRAPHIC DESIGN • PHOTOGRAPHY • MOTION DESIGN • SOUND ENGINEER ❤🔥 THAILAND 🇹🇭
+        </p>
+
+        <!-- Links Section -->
+        <div class="w-full space-y-4">
+            <a href="https://www.facebook.com/NPXS0123zz/" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+                <i class="fab fa-facebook text-xl mr-3"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/ntp_rmx/" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+                <i class="fab fa-instagram text-xl mr-3"></i> Instagram
+            </a>
+            
+            <a href="https://www.youtube.com/@NATTAPHONREMIX" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+                <i class="fab fa-youtube text-xl mr-3"></i> YouTube Channel
+            </a>
+
+            <a href="https://ntpremix.x2finity.xyz/" target="_blank" class="link-card flex items-center justify-center w-full py-4 px-6 border border-white rounded-full text-center font-medium bg-transparent">
+                <i class="fas fa-camera text-xl mr-3"></i> PHOTO
+            </a>
+        </div>
+
+        <!-- Social Icons Footer -->
+        <div class="flex space-x-8 mt-12 text-2xl" style="animation: fadeInUp 1s ease-out 0.3s backwards;">
+            <a href="https://facebook.com/ProdNAT" target="_blank" class="hover:text-blue-500 hover:scale-125 transition-all duration-300"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/Prod.NAT" target="_blank" class="hover:text-pink-500 hover:scale-125 transition-all duration-300"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@NATTAPHONREMIX" target="_blank" class="hover:text-red-500 hover:scale-125 transition-all duration-300"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <footer class="mt-16 text-gray-500 text-xs">
+            &copy; 2026 NPXS Collection. .
+        </footer>
+    </div>
+</body>
+</html>
