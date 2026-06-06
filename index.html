@@ -7,12 +7,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+        a:focus {
+            outline: none;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         body {
-            background: linear-gradient(135deg, #0F2027, #203A43, #2C5364) fixed;
+            background: linear-gradient(-45deg, #0F2027, #203A43, #2C5364, #203A43);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
             min-height: 100vh;
             color: white;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -23,9 +36,10 @@
         .link-card {
             position: relative;
             overflow: hidden;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(12px);
             background-color: rgba(255, 255, 255, 0.05);
+            will-change: transform;
         }
         .link-card::after {
             content: "";
@@ -45,7 +59,7 @@
             transform: scale(1.05);
             background-color: white;
             color: black;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
