@@ -7,11 +7,10 @@
     <title>NPXS Collection</title>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts (Prompt & Montserrat) -->
+    <!-- Google Fonts (Prompt only) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Prompt:wght@300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
         * {
@@ -23,7 +22,8 @@
         body {
             background-color: #2b4855;
             color: #ffffff;
-            font-family: 'Montserrat', 'Prompt', sans-serif;
+            font-family: 'Prompt', sans-serif;
+            /* เปลี่ยนให้ใช้แค่ Prompt ทั้งหมด */
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -136,7 +136,8 @@
             color: #ffffff;
             text-decoration: none;
             font-size: 1.05rem;
-            font-weight: 700;
+            font-weight: 600;
+            /* ปรับลดน้ำหนักฟอนต์ลงนิดหน่อยเพื่อให้ Prompt ดูพอดี */
             transition: all 0.25s ease;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -211,6 +212,14 @@
             </span>
         </div>
 
+        <!-- Profile Button (New) -->
+        <div class="btn-group" style="margin-bottom: 25px;">
+            <a href="https://npxs-code.github.io/NPXSProfile/" target="_blank" class="btn-link"
+                style="background-color: rgba(255,255,255,0.1); border-width: 2px;">
+                <i class="fa-regular fa-user"></i> ดูประวัติ (Profile)
+            </a>
+        </div>
+
         <!-- Section 1: Contact -->
         <div class="section-header">
             <span><i class="fa-regular fa-address-card"></i> ติดต่อ • CONTACT</span>
@@ -229,10 +238,10 @@
             <span><i class="fa-solid fa-briefcase"></i> ผลงาน • WORKS</span>
         </div>
         <div class="btn-group">
-            <a href="https://www.youtube.com/@NATTAPHONREMIX" _blank" class="btn-link">
+            <a href="https://www.youtube.com/@NATTAPHONREMIX" target="_blank" class="btn-link">
                 <i class="fa-brands fa-youtube"></i> YouTube Channel
             </a>
-            <a href="https://ntpremix.x2finity.xyz/" class="btn-link">
+            <a href="https://ntpremix.x2finity.xyz/" target="_blank" class="btn-link">
                 <i class="fa-solid fa-camera"></i> PHOTO
             </a>
         </div>
