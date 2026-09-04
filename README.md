@@ -1,1 +1,1 @@
-https://npxs-code.github.io/NPXS-Creation/
+https://npxs-code.github.io/npxs_creation/
